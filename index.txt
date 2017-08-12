@@ -1,4 +1,5 @@
-//.Itinerary for Ian Galloway
+//.Itinerary for Ian & Heather Galloway
+// rsync -av index.html checkin:/home/backup/churchto/galloway/index.php
 $VER=2.7
 $include foundation6.txt
 $include incstd.txt
@@ -10,26 +11,22 @@ $style+={
   body div.row { max-width: 48rem; }
 }
 
+$parameters $rows rows_num
+$rows=$td_attr1=rowspan="$rows_num"
+
 $ROW $COL
 .$TITLE
 ----t
 | Day  | Time | Event |
-$td_attr1=rowspan="3"
-| *Fri 5* |  17.36 | Arrive at Pearson on United UA4435 |
-| 18:30 | catch Union-Pearson Express train to Union Station |
-| 19:00 | text Andrew @416-320-5735 for pickup from Union Station |
-$td_attr1=rowspan="3"
-| *Sat 6* | 10:30 | _*Speaking at Mens' s brunch*_ |
-| 13:00 | _*Meet with elders*_ |
-| 18:00 | Supper with Luke & Amanda |
-$td_attr1=rowspan="2"
-| *Sun 7* | 11:00 | _*Preaching at Newlife Church*_ |
-| 14:30 | afternoon available for meeting with people |
-| *Mon 8* | $SP | day out to Niagara Escarpment at Crawford Lake |
-| *Tues 9* | 12.30 | Leave from Island on Porter PD 389 |
-| *Sat 13* | 13.45 | Arrive back at Island on Porter PD 386 |
-| *Sun 14* | 10:30 | _*Preaching at Newlife Church*_ |
-| *Sun 14* | 15.00 | Leave from Pearson on United UA4150 |
+$rows 3
+| *Sat 12* |  11:30 |✈ Arrive at Island on Porter PD 384/+text Andrew @416-320-5735 |
+| 12:00 | Church picnic in High Park |
+| 7:00 | _*Meal with Elders & wives*_ |
+$rows 4
+| *Sun 13* | 11:00 | _*Preaching at Newlife*_ |
+| 2:30 | Lunch with Andrew & Anne |
+| 4:00 | Leave for airport |
+| 5:55 |✈ Fly out from Pearson |
 ----
 $END $END
 
